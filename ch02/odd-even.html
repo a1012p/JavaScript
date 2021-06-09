@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홀짝구분</title>
+</head>
+<body>
+    <h2>홀짝 구분</h2>
+    <script>
+        var num = prompt("숫자를 입력하세요.","0");
+        var result;
+        if(num !== null)
+        {
+            document.write("조건 연산자<br>");
+            result = (num % 2 == 0 ? "짝수입니다.":"홀수입니다");
+            document.write(result);
+        }
+        else
+        {
+            document.write("입력을 취소했습니다.")
+        }
+    </script>
+</body>
+</html>
