@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+</head>
+<body>
+    <h2>구구단 프로그램</h2>
+    <script>
+        var n = parseInt(prompt("단을 입력하시오", "1"));
+        
+
+        //숫자 오류 처리 - isNaN()함수 사용
+        //null - 유효하지 않은 데이터(문자,객체)
+        if (!isNaN(n)) { //isNaN이 false = 즉 숫자일때 실행
+            for (var i = 1; i < 10; i++) {
+                document.write(n + " x " + i + " = " + n * i + '<br>');
+                // console.log("6 x " + i +" = " + 6*i);
+            }
+        }
+        else
+        {
+            document.writeln("입력이 취소되었습니다.");
+        }
+
+    </script>
+</body>
+</html>
