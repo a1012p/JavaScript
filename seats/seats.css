@@ -1,0 +1,14 @@
+#container{
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+td
+{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
