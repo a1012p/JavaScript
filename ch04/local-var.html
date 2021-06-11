@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역 변수의 범위(Scope)</title>
+</head>
+<body>
+    <h2>지역변수의 유효 범위</h2>
+    <script>
+        
+        function oneup()
+        {
+            var x =1;
+            x += 1;
+            return x;
+        }
+
+        var num = oneup();
+        document.write("num = " + num + '<br>');
+        document.write("x =" + x);
+    </script>
+</body>
+</html>

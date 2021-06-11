@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제곱수</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button,p{
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h2>계산하기</h2>
+    <button onclick="square(4)">계산하기</button>
+    <p class="demo">여기에 값이 나옵니다.</p>
+    <script>
+        var square = function(x)
+        {
+            var result =  x*x;
+            document.getElementsByClassName("demo").item(0).innerHTML ="결과는 " + result;
+        }
+
+    </script>
+</body>
+</html>
