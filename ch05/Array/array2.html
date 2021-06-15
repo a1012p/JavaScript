@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 선언 및 초기화</title>
+</head>
+<body>
+    <h2>배열(array)의 생성과 사용</h2>
+    <script>
+        var fruits =['사과','딸기','바나나'];
+        
+        document.write("fruits[0] = "+fruits[0]+"<br>");
+
+        for(var i = 0 ; i < fruits.length ;i++)
+        {
+            document.write("fruits["+i+"] = "+fruits[i]+' ');
+        }
+        //딸기 -> 토마토
+        for(var i = 0 ; i < fruits.length ;i++)
+        {
+            if(fruits[i] === "딸기") fruits[i] = "토마토";
+        }
+
+        document.write("<br>")
+        for(var tmp in fruits)
+        {
+            document.write("fruits[] = "+fruits[tmp]+' ');
+        }
+    </script>
+</body>
+</html>

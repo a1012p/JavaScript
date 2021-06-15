@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 추첨</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            background-color: #eee;
+            font-weight: 700;
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        p
+        {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>당첨자 발표</h1>
+    <button onclick="GetDate()">시간 가져오기</button>>
+    <script>
+        var seed = parseInt(prompt("전체 응모자 수 : ", ""));
+        var picked;
+        if (seed !== 0) picked = Math.floor(Math.random() * seed) + 1;
+        else picked = 0;
+        document.write("<p>전체 응모자 수 : " + seed + "명</p>");
+        document.write("<p>당첨자 : " + picked + "번</p>");
+        var date;
+        function GetDate() {
+
+            if (date !== undefined || date !== null) {
+                delete date;
+                console.log("제거");
+            }
+
+            date = new Date();
+
+            document.getElementById("date").innerHTML = date.toLocaleString();
+        }
+    </script>
+    <p id ="date"></p>
+</body>
+</html>
