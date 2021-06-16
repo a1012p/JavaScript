@@ -9,7 +9,7 @@
 <body>
     <h2>배열(array)의 생성과 사용</h2>
     <script>
-        var fruits =['사과','딸기','바나나'];
+        var fruits = ['사과','딸기','바나나'];
         
         document.write("fruits[0] = "+fruits[0]+"<br>");
 
@@ -21,13 +21,15 @@
         for(var i = 0 ; i < fruits.length ;i++)
         {
             if(fruits[i] === "딸기") fruits[i] = "토마토";
+
         }
 
         document.write("<br>")
         for(var tmp in fruits)
         {
-            document.write("fruits[] = "+fruits[tmp]+' ');
+            document.write("fruits["+tmp+"] = "+fruits[tmp]+' ');
         }
+
     </script>
 </body>
 </html>

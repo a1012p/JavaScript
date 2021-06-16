@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경색 바꾸기</title>
+    <style>
+        .box{width: 400px;height: 300px;margin-top: 50px;border : 1px solid #ccc; margin: 40px; border-radius: 20px;}
+        ul {list-style-type: none;padding-top: 30px;}
+        ul li{display: inline;text-align: center;border: 1px solid #ccc;padding: 10px 20px;margin-right: 20px;}
+        ul a:hover{color: red;}
+        a{text-decoration: none;color :black;}
+    </style>
+</head>
+<body>
+    <ul>
+        <a href="#" onclick="chageBg('green')" ><li>Green</li></a>
+        <a href="#" onclick="chageBg('black')" ><li>Black</li></a>
+        <a href="#" onclick="chageBg('pink')" ><li>Pink</li></a>
+    </ul>
+    <div id="demo" class = "box"></div>
+    <script>
+        function chageBg(color)
+        {
+            let result = document.querySelector("#demo");
+            if(result.style.backgroundColor === color)
+            {
+                result.style.backgroundColor = "white"
+            }
+            else{
+                result.style.backgroundColor = color;
+            }
+        }
+    </script>
+</body>
+</html>

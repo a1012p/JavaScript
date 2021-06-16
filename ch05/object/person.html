@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 정의와 사용</title>
+</head>
+<body>
+    <script>
+        var animal = ['cow','dog'];
+        var person = {
+            age : 38,
+            name : "추신수",
+            isMarried : true,
+            numberOfChildren : 3,
+
+            play : function()
+            {
+                alert("홈런입니다!!");
+            }
+        }
+
+        document.write("나이 : " + person.age + '<br>');
+        document.write("이름 : " + person.name + '<br>');
+        document.write("결혼여부 : " + person.isMarried + '<br>');
+        document.write("자식 : " + person.numberOfChildren + '<br>');
+        person.play();
+    </script>
+</body>
+</html>
