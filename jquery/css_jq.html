@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 제어 함수 - css()</title>
+    <style>
+        h1{color: blue;}
+    </style>
+    <script src="js/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <h1>welcome to my HomePage!!</h1>
+    <p id="name">My name is Steve</p>
+    <p class="home">I live in NewYork.</p>
+    <script>
+        $(document).ready(function(){
+            $("p").css("background","yellow")
+            $(".home").css("color","blue")
+        });
+    </script>
+</body>
+</html>
